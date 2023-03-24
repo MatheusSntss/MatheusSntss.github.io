@@ -1,0 +1,62 @@
+.formacao {
+  background: #141414;
+}
+.formacao-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  padding: 40px 20px;
+  align-items: center;
+}
+.formacao-container h1 {
+  font-size: 8rem;
+  word-break: break-all;
+  max-width: 350px;
+  text-transform: uppercase;
+}
+.descricao-facul {
+  color: #a3a3a3;
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin-left: 30px;
+}
+.descricao-facul strong {
+  color: white;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.faculdade {
+  flex: 1;
+  color: white;
+  background: #000;
+  list-style: none;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  .formacao-container h1 {
+    color: white;
+    word-break: normal;
+    font-size: 48px;
+    text-transform: capitalize;
+  }
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+  }
+  .descricao-facul {
+    font-size: 1.3rem;
+    margin: 0px;
+  }
+  .faculdade-lista {
+    margin-left: -45px;
+  }
+  .faculdade {
+    flex: 25%;
+  }
+}

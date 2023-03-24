@@ -1,0 +1,11 @@
+body {
+  display: grid;
+  font-family: "Fira Sans", Arial, sans-serif;
+  margin: 0px;
+}
+
+@media (max-width: 800px) {
+  body {
+    gap: 1rem;
+  }
+}
